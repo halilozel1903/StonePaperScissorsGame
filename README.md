@@ -54,4 +54,167 @@ Tasarlanan kodları artık ViewController.swift dosyasında bağlıyoruz :
   <img src="Screen%20Shot%202018-07-22%20at%2011.27.02%20PM.png" >
 </p>
 
+<br>
+
+## Kodların Yazılması
+
+
+```swift 
+// MARK: - Variables
+    var myPoints = 0
+    var pcPoints = 0
+    let array = ["tas","kagit","makas"] // string türde bir dizi oluşturuldu.
+```
+Kullanıcının puanını ve bilgisayarın puanını tutmak için 2 adet değişken tanımlandı. İlk değerlerine 0 atandı.
+String türde bir array tanımlandı. Array içine oyunda kullanılan seçenekler eklendi.
+
+<br>
+
+```swift 
+ // MARK: - IBOutlets
+    @IBOutlet weak var myChoiseLabel: UILabel!
+    @IBOutlet weak var pcChoiseLabel: UILabel!
+    @IBOutlet weak var theEndLabel: UILabel!
+    @IBOutlet weak var myPointsLabel: UILabel!
+    @IBOutlet weak var pcPointsLabel: UILabel!
+```
+
+Tasarımda bulunan Labelları kodla tanımladık. Kullanıcının ve bilgisayarın elde ettiği puanları gösteren labellar,
+kazanan kim onu belirten label'ı ve toplam sonuca göre kimin kazandığını açıklayan label tanımı yapılmıştır.
+
+<br>
+
+Sıra geldi butonlara tıklanınca oluşacak işlemleri tanımlamaya 3 adet metod yazacağız. Bunların işlevleri benzerdir.
+```swift 
+@IBAction func rockSelected(_ sender: Any) {
+        
+        let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
+        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        
+        if pcSelected == "tas" {
+            myChoiseLabel.text = "Sizin seçiminiz : Taş"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Taş"
+            theEndLabel.text = "Berabere Kaldınız."
+            
+            
+        }else if pcSelected == "kagit" {
+            myChoiseLabel.text = "Sizin seçiminiz : Taş"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Kağıt"
+            theEndLabel.text = "Bilgisayar Kazandı."
+            
+            pcPoints += 1
+            
+            pcPointsLabel.text = String(pcPoints)
+            
+        }else if pcSelected == "makas" {
+            myChoiseLabel.text = "Sizin seçiminiz : Taş"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Makas"
+            theEndLabel.text = "Siz Kazandınız."
+            
+            myPoints += 1
+            
+            myPointsLabel.text = String(myPoints)
+            
+        }
+    }
+```
+
+Rastgele sayı üreten fonksiyonu kullanarak 0-2 arasında rastgele bir sayı üretiyoruz. Üretilen bu değer array değerine atandı.
+Sonrada karşılaştırma yapılıyor. Eğer bilgisayar "taş" seçeneğini seçerse ekranda seçilen kısmında taş yazar. Sonuç olarak bizde taş seçtiğimiz için sonuç beraberliktir. Eğer biz taş ve bilgisayarda kağıt seçerse bilgisayar oyunu kazanır ve 1 puan alır. Ekranda bilgisayar kazandı şeklinde mesaj verir. Biz taş ve bilgisayar makas ise biz kazanmış oluyoruz ve puanımız 1 artıyor ve ekranda siz kazandınız yazıyor.
+
+
+```swift 
+
+ // kağıt ile ilgili işlemler
+    @IBAction func paperSelected(_ sender: Any) {
+        
+        let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
+        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        
+        if pcSelected == "tas" {
+            myChoiseLabel.text = "Sizin seçiminiz : Kağıt"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Taş"
+            theEndLabel.text = "Siz kazandınız."
+            
+            myPoints += 1
+            
+            myPointsLabel.text = String(myPoints)
+            
+            
+        }else if pcSelected == "kagit" {
+            myChoiseLabel.text = "Sizin seçiminiz : Kağıt"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Kağıt"
+            theEndLabel.text = "Beraber Kaldınız."
+            
+        
+            
+        }else if pcSelected == "makas" {
+            myChoiseLabel.text = "Sizin seçiminiz : Kağıt"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Makas"
+            theEndLabel.text = "Bilgisayar Kazandı."
+            
+            pcPoints += 1
+            
+            pcPointsLabel.text = String(pcPoints)
+            
+        }
+        
+    }
+
+```
+
+Bu sefer biz seçimlerimizde kağıt oluyoruz. Kağıt'ın diğer bileşenlere göre durumları kontrol ediliyor. Taş metoduna çok
+benzeyen bu metod sadece ufak bir değişiklikle istenilen işlemleri yapmaktadır.
+
+
+```swift 
+
+// makas ile ilgili işlemler
+    @IBAction func scissorSelected(_ sender: Any) {
+        
+        let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
+        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        
+        if pcSelected == "tas" {
+            myChoiseLabel.text = "Sizin seçiminiz : Makas"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Taş"
+            theEndLabel.text = "Bilgisayar Kazandı."
+            
+            pcPoints += 1
+            
+            pcPointsLabel.text = String(pcPoints)
+            
+            
+        }else if pcSelected == "kagit" {
+            myChoiseLabel.text = "Sizin seçiminiz : Makas"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Kağıt"
+            theEndLabel.text = "Siz Kazandınız."
+            
+            myPoints += 1
+            
+            myPointsLabel.text = String(myPoints)
+           
+            
+        }else if pcSelected == "makas" {
+            myChoiseLabel.text = "Sizin seçiminiz : Makas"
+            pcChoiseLabel.text = "Bilgisayarın seçimi : Makas"
+            theEndLabel.text = "Berabere Kaldınız."
+           
+            
+        }
+        
+    }
+
+```
+
+En son makas ile ilgili işlemleri yapmak için bir metod oluşturduk. Eğer makas üstün gelirse bizim puanımız 1 artacak eğer
+bilgisayarın değeri üstün gelirse bilgisayarın değeri 1 artacak. Eşit seçeneklere sahipsek sonuc değişmeyecek.
+
+## Uygulamanın Demosu
+
+
+
+
+ 
+
 
