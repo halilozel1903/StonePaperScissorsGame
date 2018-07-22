@@ -122,6 +122,7 @@ Sıra geldi butonlara tıklanınca oluşacak işlemleri tanımlamaya 3 adet meto
 Rastgele sayı üreten fonksiyonu kullanarak 0-2 arasında rastgele bir sayı üretiyoruz. Üretilen bu değer array değerine atandı.
 Sonrada karşılaştırma yapılıyor. Eğer bilgisayar "taş" seçeneğini seçerse ekranda seçilen kısmında taş yazar. Sonuç olarak bizde taş seçtiğimiz için sonuç beraberliktir. Eğer biz taş ve bilgisayarda kağıt seçerse bilgisayar oyunu kazanır ve 1 puan alır. Ekranda bilgisayar kazandı şeklinde mesaj verir. Biz taş ve bilgisayar makas ise biz kazanmış oluyoruz ve puanımız 1 artıyor ve ekranda siz kazandınız yazıyor.
 
+ <br>
 
 ```swift 
 
@@ -166,6 +167,7 @@ Sonrada karşılaştırma yapılıyor. Eğer bilgisayar "taş" seçeneğini seç
 Bu sefer biz seçimlerimizde kağıt oluyoruz. Kağıt'ın diğer bileşenlere göre durumları kontrol ediliyor. Taş metoduna çok
 benzeyen bu metod sadece ufak bir değişiklikle istenilen işlemleri yapmaktadır.
 
+ <br>
 
 ```swift 
 
@@ -210,6 +212,8 @@ benzeyen bu metod sadece ufak bir değişiklikle istenilen işlemleri yapmaktad�
 En son makas ile ilgili işlemleri yapmak için bir metod oluşturduk. Eğer makas üstün gelirse bizim puanımız 1 artacak eğer
 bilgisayarın değeri üstün gelirse bilgisayarın değeri 1 artacak. Eşit seçeneklere sahipsek sonuc değişmeyecek.
 
+ <br>
+
 ## Uygulamanın Demosu
 
 
@@ -217,7 +221,7 @@ bilgisayarın değeri üstün gelirse bilgisayarın değeri 1 artacak. Eşit se�
 
   <img src="res4.png" width="200" />  <img src="res5.png" width="200" /> <img src="res6.png" width="200" />
 
-
+ <br>
  
  ## NOT
  
