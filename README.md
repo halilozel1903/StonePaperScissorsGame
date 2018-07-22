@@ -213,7 +213,16 @@ bilgisayarın değeri üstün gelirse bilgisayarın değeri 1 artacak. Eşit se�
 ## Uygulamanın Demosu
 
 
+<img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res1.png" width="200" />  <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res2.png" width="200" />  <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res3.png" width="200" />
 
+  <img src="res4.png" width="200" />  <img src="res5.png" width="200" /> <img src="res6.png" width="200" />
+
+
+ 
+ ## NOT
+ 
+ Bu proje açık kaynak kodlu bir projedir. Elimden geldiğince birşeyler yapmaya çalışıyorum. Eksik veya hatalı gördüğünüz
+ kısımları düzeltebilirsiniz. Eklemeler yaparak bu projeyi daha da büyük hale getirebiliriz. Desteklerinizi bekliyorum :)
 
  
 
