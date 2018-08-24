@@ -225,8 +225,11 @@ bilgisayarın değeri üstün gelirse bilgisayarın değeri 1 artacak. Eşit se�
  
  ## NOT
  
- Bu proje açık kaynak kodlu bir projedir. Elimden geldiğince birşeyler yapmaya çalışıyorum. Eksik veya hatalı gördüğünüz
- kısımları düzeltebilirsiniz. Eklemeler yaparak bu projeyi daha da büyük hale getirebiliriz. Desteklerinizi bekliyorum :)
+ Bu proje açık kaynak(open source) kodlu bir projedir. <br>
+ Elimden geldiğince birşeyler yapmaya çalışıyorum.<br>
+ Eksik veya hatalı gördüğünüz kısımları düzeltebilirsiniz.<br>
+ Eklemeler yaparak bu projeyi daha da büyük hale getirebiliriz. <br>
+ Desteklerinizi bekliyorum :)
 
  
 
