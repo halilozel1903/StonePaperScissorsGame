@@ -4,11 +4,11 @@
 
 ## Projenin Amacı
 
-Taş Kağıt Makas oyunu Swift-4.2 ile geliştirilmiş bir iOS uygulamasıdır.
+Taş Kağıt Makas oyunu Swift-5 ile geliştirilmiş bir iOS uygulamasıdır.
 Amaç kullanıcıya iOS uygulamalarda da basit bir şekildeoyun nasıl yapılır onu göstermektir.
 
 ## Projenin İçeriği
-Swift-4 ile geliştirilen bir projedir. Button,Image,Label gibi bileşenlerin kullanımlarını öğreneceksiniz. <br>
+Swift-5 ile geliştirilen bir projedir. Button,Image,Label gibi bileşenlerin kullanımlarını öğreneceksiniz. <br>
 
 ## Oyun Nasıl Oynanır ?
 Oyunda bir kullanıcı ve karşısında bilgisayar olmak üzere 2 yarışmacı bulunmaktadır. Bizim seçimimize göre rakibimiz rastgele
