@@ -1,54 +1,54 @@
-# Taş Kağıt Makas Oyunu 
+# Rock Paper Scissors Game
 
 ![Screenshot](taskagitmakas.jpg)
 
-## Projenin Amacı
+## The goal of the project
 
-Taş Kağıt Makas oyunu Swift-5 ile geliştirilmiş bir iOS uygulamasıdır.
-Amaç kullanıcıya iOS uygulamalarda da basit bir şekildeoyun nasıl yapılır onu göstermektir.
+Rock Paper Scissors game is an iOS application developed with Swift-5.
+The aim is to show the user how to play in a simple way in iOS applications.
 
-## Projenin İçeriği
-Swift-5 ile geliştirilen bir projedir. Button,Image,Label gibi bileşenlerin kullanımlarını öğreneceksiniz. <br>
+## Project Content
+It is a project developed with Swift-5. You will learn the usage of components such as Button, Image, Label. <br>
 
-## Oyun Nasıl Oynanır ?
-Oyunda bir kullanıcı ve karşısında bilgisayar olmak üzere 2 yarışmacı bulunmaktadır. Bizim seçimimize göre rakibimiz rastgele
-bir seçenek sunarak bize karşı alacağı sonucu bekler. Eğer bizden iyi bir eleman kullanırsa 1 puan alır. Biz galip gelirsek
-bizim puanımız 1 artar. Eşitse ise herhangibir şey değişmeden oyuna devam edilir. Yapıların birbirlerine göre durumları
-aşağıdaki gibidir : 
+## How to Play the Game?
+There are 2 competitors in the game, a user and a computer. Our opponent is random according to our choice
+it waits for its result against us by offering a choice. If he uses a good employee from us, he gets 1 point. If we win
+our score increases by 1. If it is equal, the game continues without changing anything. The states of the structures relative to each other
+is as follows:
 
-1. Taş - Kağıt : Kağıt 
-2. Taş - Makas : Taş
-3. Taş - Taş   : Berabere
-4. Kağıt - Kağıt : Berabere 
-5. Kağıt - Makas : Makas
-6. Kağıt - Taş   : Kağıt
-7. Makas - Kağıt : Makas 
-8. Makas - Makas : Berabere
-9. Makas - Taş   : Taş
+1. Rock - Paper: Paper
+2. Rock - Scissors: Stone
+3. Rock - Rock: Draw
+4. Paper - Paper: Draw
+5. Paper - Scissors: Scissors
+6. Paper - Rock: Paper
+7. Scissors - Paper: Scissors
+8. Scissors - Scissors: Draw
+9. Scissors - Rock: Stone
 
  <br>
 
-## Ekran Tasarımı
+## Screen Design
 
 <p>
   <img src="pic1.png" width="300" >
 </p>
 
-Ekran tasarımında çeşitli yapıları kullandık. 3 adet buton kullanıldı. Diğer kalan yapılar ise label elemanıdır. 
-Kazanılma ya da kaybedilme durumlarında değerlerin güncellendiği alanlarla label ile tasarlandı.
-Butonların arka planında kullanılan resimleri aşağıdaki dosyada bulabilirsiniz : 
+We used various structures in screen design. 3 buttons were used. Other remaining structures are label elements.
+It was designed with a label, with fields where values are updated in cases of gain or loss.
+You can find the pictures used in the background of the buttons in the following file:
 
 https://github.com/halilozel1903/StonePaperScissorsGame/tree/master/TasKagitMakas/TasKagitMakas/Assets.xcassets
 
-Tasarlanan kodları artık ViewController.swift dosyasında bağlıyoruz : 
+We are now linking the designed codes in the ViewController.swift file:
 
 ```java 
   // MARK: - Variables 
   // MARK: - IBOutlets
   // MARK: - IBActions
 ```
- şeklinde yeni bir kullanım tarzı ile yazmış olduğumuz kodları düzenliyoruz. Tanımlanan yapıları değişkenker, tanımlamalar
- ve buton işlemleri olmak üzere 3 çeşit kategoriye ayırdık. Aşağıdaki gibi kolay şekilde proje içerisinde gezinebileceğiz : 
+ We are editing the codes we have written with a new usage style. Defined structures are variables, definitions
+ and button operations. We will be able to navigate easily within the project as follows:
  
  <p>
   <img src="Screen%20Shot%202018-07-22%20at%2011.27.02%20PM.png" >
@@ -56,17 +56,17 @@ Tasarlanan kodları artık ViewController.swift dosyasında bağlıyoruz :
 
 <br>
 
-## Kodların Yazılması
+## Writing the Codes
 
 
 ```swift 
 // MARK: - Variables
     var myPoints = 0
     var pcPoints = 0
-    let array = ["tas","kagit","makas"] // string türde bir dizi oluşturuldu.
+    let array = ["rock","paper","scissors"] // string türde bir dizi oluşturuldu.
 ```
-Kullanıcının puanını ve bilgisayarın puanını tutmak için 2 adet değişken tanımlandı. İlk değerlerine 0 atandı.
-String türde bir array tanımlandı. Array içine oyunda kullanılan seçenekler eklendi.
+Two variables were defined to keep the user's score and the computer's score. 0 is assigned to their initial value.
+An array of type string has been defined. The options used in the game have been added into the Array.
 
 <br>
 
@@ -79,37 +79,38 @@ String türde bir array tanımlandı. Array içine oyunda kullanılan seçenekle
     @IBOutlet weak var pcPointsLabel: UILabel!
 ```
 
-Tasarımda bulunan Labelları kodla tanımladık. Kullanıcının ve bilgisayarın elde ettiği puanları gösteren labellar,
-kazanan kim onu belirten label'ı ve toplam sonuca göre kimin kazandığını açıklayan label tanımı yapılmıştır.
+We defined the Labels in the design with code. Labels showing the points obtained by the user and the computer,
+a label indicating who is the winner and a label describing who won according to the total result.
 
 <br>
 
-Sıra geldi butonlara tıklanınca oluşacak işlemleri tanımlamaya 3 adet metod yazacağız. Bunların işlevleri benzerdir.
+Now we will write 3 methods to define the operations that will occur when the buttons are clicked. Their functions are similar.
+
 ```swift 
 @IBAction func rockSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
         let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
         
-        if pcSelected == "tas" {
-            myChoiseLabel.text = "Sizin seçiminiz : Taş"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Taş"
-            theEndLabel.text = "Berabere Kaldınız."
+        if pcSelected == "rock" {
+            myChoiseLabel.text = "Your Choice : Rock"
+            pcChoiseLabel.text = "Computer Choice : Rock"
+            theEndLabel.text = "Tie."
             
             
-        }else if pcSelected == "kagit" {
-            myChoiseLabel.text = "Sizin seçiminiz : Taş"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Kağıt"
-            theEndLabel.text = "Bilgisayar Kazandı."
+        }else if pcSelected == "paper" {
+            myChoiseLabel.text = "Your Choice : Rock"
+            pcChoiseLabel.text = "Computer Choice : Paper"
+            theEndLabel.text = "Computer won."
             
             pcPoints += 1
             
             pcPointsLabel.text = String(pcPoints)
             
-        }else if pcSelected == "makas" {
-            myChoiseLabel.text = "Sizin seçiminiz : Taş"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Makas"
-            theEndLabel.text = "Siz Kazandınız."
+        }else if pcSelected == "scissors" {
+            myChoiseLabel.text = "Your Choice : Rock"
+            pcChoiseLabel.text = "Computer Choice : Scissors"
+            theEndLabel.text = "You won"
             
             myPoints += 1
             
@@ -119,40 +120,40 @@ Sıra geldi butonlara tıklanınca oluşacak işlemleri tanımlamaya 3 adet meto
     }
 ```
 
-Rastgele sayı üreten fonksiyonu kullanarak 0-2 arasında rastgele bir sayı üretiyoruz. Üretilen bu değer array değerine atandı.
-Sonrada karşılaştırma yapılıyor. Eğer bilgisayar "taş" seçeneğini seçerse ekranda seçilen kısmında taş yazar. Sonuç olarak bizde taş seçtiğimiz için sonuç beraberliktir. Eğer biz taş ve bilgisayarda kağıt seçerse bilgisayar oyunu kazanır ve 1 puan alır. Ekranda bilgisayar kazandı şeklinde mesaj verir. Biz taş ve bilgisayar makas ise biz kazanmış oluyoruz ve puanımız 1 artıyor ve ekranda siz kazandınız yazıyor.
+We generate a random number between 0-2 using the random number generator function. This generated value is assigned to the value of array.
+Then the comparison is made. If the computer selects the "stone" option, a stone will be written on the selected part of the screen. As a result, because we chose stones, the result is a draw. If we choose stone and paper on the computer, the computer wins the game and gets 1 point. The message on the screen shows the computer won. If we are stone and computer scissors, we win and our score increases by 1 and the screen says you won.
 
  <br>
 
 ```swift 
 
- // kağıt ile ilgili işlemler
+ // paper handling
     @IBAction func paperSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
         let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
         
-        if pcSelected == "tas" {
-            myChoiseLabel.text = "Sizin seçiminiz : Kağıt"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Taş"
-            theEndLabel.text = "Siz kazandınız."
+        if pcSelected == "rock" {
+            myChoiseLabel.text = "Your Choice : Paper"
+            pcChoiseLabel.text = "Computer Choice : Rock"
+            theEndLabel.text = "You won."
             
             myPoints += 1
             
             myPointsLabel.text = String(myPoints)
             
             
-        }else if pcSelected == "kagit" {
-            myChoiseLabel.text = "Sizin seçiminiz : Kağıt"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Kağıt"
-            theEndLabel.text = "Beraber Kaldınız."
+        }else if pcSelected == "paper" {
+            myChoiseLabel.text = "Your Choice : Paper"
+            pcChoiseLabel.text = "Computer Choice : Paper"
+            theEndLabel.text = "Tie."
             
         
             
-        }else if pcSelected == "makas" {
-            myChoiseLabel.text = "Sizin seçiminiz : Kağıt"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Makas"
-            theEndLabel.text = "Bilgisayar Kazandı."
+        }else if pcSelected == "scissors" {
+            myChoiseLabel.text = "Your Choice : Paper"
+            pcChoiseLabel.text = "Computer Choice : Scissors"
+            theEndLabel.text = "Computer won."
             
             pcPoints += 1
             
@@ -164,43 +165,43 @@ Sonrada karşılaştırma yapılıyor. Eğer bilgisayar "taş" seçeneğini seç
 
 ```
 
-Bu sefer biz seçimlerimizde kağıt oluyoruz. Kağıt'ın diğer bileşenlere göre durumları kontrol ediliyor. Taş metoduna çok
-benzeyen bu metod sadece ufak bir değişiklikle istenilen işlemleri yapmaktadır.
+This time, we become paper in our choices. The status of the paper compared to other components is checked. Much to the stone method
+This similar method performs the desired operations with only a slight change.
 
  <br>
 
 ```swift 
 
-// makas ile ilgili işlemler
+// scissors related operations
     @IBAction func scissorSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
         let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
         
-        if pcSelected == "tas" {
-            myChoiseLabel.text = "Sizin seçiminiz : Makas"
+        if pcSelected == "rock" {
+            myChoiseLabel.text = "Your Choice  : Rock"
             pcChoiseLabel.text = "Bilgisayarın seçimi : Taş"
-            theEndLabel.text = "Bilgisayar Kazandı."
+            theEndLabel.text = "Computer won."
             
             pcPoints += 1
             
             pcPointsLabel.text = String(pcPoints)
             
             
-        }else if pcSelected == "kagit" {
-            myChoiseLabel.text = "Sizin seçiminiz : Makas"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Kağıt"
-            theEndLabel.text = "Siz Kazandınız."
+        }else if pcSelected == "paper" {
+            myChoiseLabel.text = "Your Choice  : scissors"
+            pcChoiseLabel.text = "Computer Choice : Paper"
+            theEndLabel.text = "You won."
             
             myPoints += 1
             
             myPointsLabel.text = String(myPoints)
            
             
-        }else if pcSelected == "makas" {
-            myChoiseLabel.text = "Sizin seçiminiz : Makas"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Makas"
-            theEndLabel.text = "Berabere Kaldınız."
+        }else if pcSelected == "scissors" {
+            myChoiseLabel.text = "Your Choice  : scissors"
+            pcChoiseLabel.text = "Computer Choice : scissors"
+            theEndLabel.text = "Tie"
            
             
         }
@@ -209,12 +210,12 @@ benzeyen bu metod sadece ufak bir değişiklikle istenilen işlemleri yapmaktad�
 
 ```
 
-En son makas ile ilgili işlemleri yapmak için bir metod oluşturduk. Eğer makas üstün gelirse bizim puanımız 1 artacak eğer
-bilgisayarın değeri üstün gelirse bilgisayarın değeri 1 artacak. Eşit seçeneklere sahipsek sonuc değişmeyecek.
+We have created a method to do the latest scissors related operations. If the scissors prevail, our score will increase by 1 if
+If the value of the computer wins, the value of the computer will increase by 1. The result will not change if we have equal options.
 
  <br>
 
-## Uygulamanın Demosu
+## Application Demo
 
 
 <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res1.png" width="200" />  <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res2.png" width="200" />  <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res3.png" width="200" />
@@ -223,11 +224,31 @@ bilgisayarın değeri üstün gelirse bilgisayarın değeri 1 artacak. Eşit se�
 
  <br>
  
- ## NOT
- 
- Bu proje açık kaynak(open source) kodlu bir projedir. <br>
- Eklemeler yaparak bu projeyi daha da büyük hale getirebiliriz. <br>
- Desteklerinizi bekliyorum :)
+
+## License
+```
+MIT License
+
+Copyright (c) 2021 Halil Özel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
  
 
