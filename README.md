@@ -63,7 +63,7 @@ We are now linking the designed codes in the ViewController.swift file:
 // MARK: - Variables
     var myPoints = 0
     var pcPoints = 0
-    let array = ["rock","paper","scissors"] // string türde bir dizi oluşturuldu.
+    let array = ["rock","paper","scissors"] // An array of string type was created.
 ```
 Two variables were defined to keep the user's score and the computer's score. 0 is assigned to their initial value.
 An array of type string has been defined. The options used in the game have been added into the Array.
@@ -90,7 +90,7 @@ Now we will write 3 methods to define the operations that will occur when the bu
 @IBAction func rockSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        let pcSelected = array[randomSelected] // random element will be taken from the array.
         
         if pcSelected == "rock" {
             myChoiseLabel.text = "Your Choice : Rock"
@@ -131,7 +131,7 @@ Then the comparison is made. If the computer selects the "stone" option, a stone
     @IBAction func paperSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        let pcSelected = array[randomSelected] // random element will be taken from the array.
         
         if pcSelected == "rock" {
             myChoiseLabel.text = "Your Choice : Paper"
@@ -176,7 +176,7 @@ This similar method performs the desired operations with only a slight change.
     @IBAction func scissorSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        let pcSelected = array[randomSelected] // random element will be taken from the array.
         
         if pcSelected == "rock" {
             myChoiseLabel.text = "Your Choice  : Rock"
