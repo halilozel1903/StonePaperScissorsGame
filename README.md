@@ -1,16 +1,16 @@
-# Rock Paper Scissors Game
+# Rock Paper Scissors Game 🏆
 
 ![Screenshot](taskagitmakas.jpg)
 
-## The goal of the project
+## The goal of the project 🌎
 
 Rock Paper Scissors game is an iOS application developed with Swift-5.
 The aim is to show the user how to play in a simple way in iOS applications.
 
-## Project Content
+## Project Content ℹ️
 It is a project developed with Swift-5. You will learn the usage of components such as Button, Image, Label. <br>
 
-## How to Play the Game?
+## How to Play the Game ⁉️
 There are 2 competitors in the game, a user and a computer. Our opponent is random according to our choice
 it waits for its result against us by offering a choice. If he uses a good employee from us, he gets 1 point. If we win
 our score increases by 1. If it is equal, the game continues without changing anything. The states of the structures relative to each other
@@ -28,7 +28,7 @@ is as follows:
 
  <br>
 
-## Screen Design
+## Screen Design 📱
 
 <p>
   <img src="pic1.png" width="300" >
@@ -40,7 +40,7 @@ You can find the pictures used in the background of the buttons in the following
 
 https://github.com/halilozel1903/StonePaperScissorsGame/tree/master/TasKagitMakas/TasKagitMakas/Assets.xcassets
 
-We are now linking the designed codes in the ViewController.swift file:
+We are now linking the designed codes in the ```ViewController.swift``` file:
 
 ```java 
   // MARK: - Variables 
@@ -56,7 +56,7 @@ We are now linking the designed codes in the ViewController.swift file:
 
 <br>
 
-## Writing the Codes
+## Writing the Codes 💻
 
 
 ```swift 
@@ -215,7 +215,7 @@ If the value of the computer wins, the value of the computer will increase by 1.
 
  <br>
 
-## Application Demo
+## Application Demo 📸
 
 
 <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res1.png" width="200" />  <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res2.png" width="200" />  <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res3.png" width="200" />
@@ -225,7 +225,7 @@ If the value of the computer wins, the value of the computer will increase by 1.
  <br>
  
 
-## License
+## License 📚
 ```
 MIT License
 
