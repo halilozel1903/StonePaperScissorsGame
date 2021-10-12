@@ -8,7 +8,7 @@ Rock Paper Scissors game is an iOS application developed with Swift-5.
 The aim is to show the user how to play in a simple way in iOS applications.
 
 ## Project Content ℹ️
-It is a project developed with Swift-5. You will learn the usage of components such as Button, Image, Label. <br>
+It is a project developed with Swift 5.5 You will learn the usage of components such as Button, Image, Label. <br>
 
 ## How to Play the Game ⁉️
 There are 2 competitors in the game, a user and a computer. Our opponent is random according to our choice
@@ -229,7 +229,7 @@ If the value of the computer wins, the value of the computer will increase by 1.
 ```
 MIT License
 
-Copyright (c) 2021 Halil Özel
+Copyright (c) 2021 Halil OZEL
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
