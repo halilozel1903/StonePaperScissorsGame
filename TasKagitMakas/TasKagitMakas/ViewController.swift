@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPointsLabel: UILabel!
     @IBOutlet weak var pcPointsLabel: UILabel!
     
-
+    
     // MARK: - IBActions
     @IBAction func rockSelected(_ sender: Any) {
         
@@ -78,7 +78,6 @@ class ViewController: UIViewController {
             pcChoiseLabel.text = "Bilgisayarın seçimi : Kağıt"
             theEndLabel.text = "Beraber Kaldınız."
             
-        
             
         }else if pcSelected == "makas" {
             myChoiseLabel.text = "Sizin seçiminiz : Kağıt"
@@ -86,11 +85,9 @@ class ViewController: UIViewController {
             theEndLabel.text = "Bilgisayar Kazandı."
             
             pcPoints += 1
-            
             pcPointsLabel.text = String(pcPoints)
             
         }
-        
     }
     
     // makas ile ilgili işlemler
@@ -117,26 +114,20 @@ class ViewController: UIViewController {
             myPoints += 1
             
             myPointsLabel.text = String(myPoints)
-           
+            
             
         }else if pcSelected == "makas" {
             myChoiseLabel.text = "Sizin seçiminiz : Makas"
             pcChoiseLabel.text = "Bilgisayarın seçimi : Makas"
             theEndLabel.text = "Berabere Kaldınız."
-           
             
         }
-        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
-
-
+    
 }
 
