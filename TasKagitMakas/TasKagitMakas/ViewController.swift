@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     @IBAction func rockSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        let pcSelected = array[randomSelected] // A random element will be selected from the array.
         
         if pcSelected == "tas" {
             myChoiseLabel.text = "Sizin seçiminiz : Taş"
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     @IBAction func paperSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        let pcSelected = array[randomSelected] // A random element will be selected from the array.
         
         if pcSelected == "tas" {
             myChoiseLabel.text = "Sizin seçiminiz : Kağıt"
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
     @IBAction func scissorSelected(_ sender: Any) {
         
         let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // dizinin içerisinden rastgele eleman alınacak.
+        let pcSelected = array[randomSelected] // A random element will be selected from the array.
         
         if pcSelected == "tas" {
             myChoiseLabel.text = "Sizin seçiminiz : Makas"
