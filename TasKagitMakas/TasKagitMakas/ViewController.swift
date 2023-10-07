@@ -100,9 +100,7 @@ class ViewController: UIViewController {
             myChoiseLabel.text = "Sizin seçiminiz : Makas"
             pcChoiseLabel.text = "Bilgisayarın seçimi : Taş"
             theEndLabel.text = "Bilgisayar Kazandı."
-            
             pcPoints += 1
-            
             pcPointsLabel.text = String(pcPoints)
             
             
@@ -110,9 +108,7 @@ class ViewController: UIViewController {
             myChoiseLabel.text = "Sizin seçiminiz : Makas"
             pcChoiseLabel.text = "Bilgisayarın seçimi : Kağıt"
             theEndLabel.text = "Siz Kazandınız."
-            
             myPoints += 1
-            
             myPointsLabel.text = String(myPoints)
             
             
@@ -120,7 +116,6 @@ class ViewController: UIViewController {
             myChoiseLabel.text = "Sizin seçiminiz : Makas"
             pcChoiseLabel.text = "Bilgisayarın seçimi : Makas"
             theEndLabel.text = "Berabere Kaldınız."
-            
         }
     }
     
@@ -128,6 +123,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
 }
 
