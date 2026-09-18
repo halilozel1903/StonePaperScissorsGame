@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9FCE752020FCCEA100E5DD11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE751F20FCCEA100E5DD11 /* AppDelegate.swift */; };
 		9FCE752220FCCEA100E5DD11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE752120FCCEA100E5DD11 /* ViewController.swift */; };
+		9FCE75A120FCCEA100E5DD11 /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE75A020FCCEA100E5DD11 /* GameRules.swift */; };
 		9FCE752520FCCEA100E5DD11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE752320FCCEA100E5DD11 /* Main.storyboard */; };
 		9FCE752720FCCEA300E5DD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE752620FCCEA300E5DD11 /* Assets.xcassets */; };
 		9FCE752A20FCCEA300E5DD11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE752820FCCEA300E5DD11 /* LaunchScreen.storyboard */; };
@@ -18,6 +19,7 @@
 		9FCE751C20FCCEA100E5DD11 /* TasKagitMakas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasKagitMakas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE751F20FCCEA100E5DD11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FCE752120FCCEA100E5DD11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FCE75A020FCCEA100E5DD11 /* GameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRules.swift; sourceTree = "<group>"; };
 		9FCE752420FCCEA100E5DD11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FCE752620FCCEA300E5DD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FCE752920FCCEA300E5DD11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				9FCE751F20FCCEA100E5DD11 /* AppDelegate.swift */,
 				9FCE752120FCCEA100E5DD11 /* ViewController.swift */,
+				9FCE75A020FCCEA100E5DD11 /* GameRules.swift */,
 				9FCE752320FCCEA100E5DD11 /* Main.storyboard */,
 				9FCE752620FCCEA300E5DD11 /* Assets.xcassets */,
 				9FCE752820FCCEA300E5DD11 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCE752220FCCEA100E5DD11 /* ViewController.swift in Sources */,
+				9FCE75A120FCCEA100E5DD11 /* GameRules.swift in Sources */,
 				9FCE752020FCCEA100E5DD11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
