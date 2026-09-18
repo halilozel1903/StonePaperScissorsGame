@@ -13,7 +13,11 @@ It is a project developed with Swift 5.5 You will learn the usage of components 
 ## How to Play the Game ⁉️
 There are 2 competitors in the game, a user and a computer. Our opponent is random according to our choice
 it waits for its result against us by offering a choice. If he uses a good employee from us, he gets 1 point. If we win
-our score increases by 1. If it is equal, the game continues without changing anything. The states of the structures relative to each other
+our score increases by 1. If it is equal, the game continues without changing anything.
+
+The match is **first to 5 points**. After a match ends, tap **Maçı Sıfırla** to start a new one. Consecutive wins are tracked as a streak, along with your best streak.
+
+The states of the structures relative to each other
 is as follows:
 
 1. Rock - Paper: Paper
