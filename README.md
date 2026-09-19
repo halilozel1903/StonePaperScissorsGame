@@ -1,240 +1,107 @@
-# Rock 🪨 Paper 📃 Scissors ✂️ Game 🏆
+# Rock Paper Scissors
 
-![Screenshot](taskagitmakas.jpg)
+<p align="center">
+  <img src="taskagitmakas.jpg" width="280" alt="Rock Paper Scissors hero artwork" />
+</p>
 
-## The goal of the project 🌎
+<p align="center">
+  <img alt="Platform" src="https://img.shields.io/badge/platform-iOS-000000?logo=apple&logoColor=white" />
+  <img alt="Swift" src="https://img.shields.io/badge/Swift-5.0-F05138?logo=swift&logoColor=white" />
+  <img alt="UIKit" src="https://img.shields.io/badge/UI-UIKit-2396F3" />
+  <img alt="iOS" src="https://img.shields.io/badge/iOS-11.4%2B-lightgrey" />
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-blue" />
+</p>
 
-Rock Paper Scissors game is an iOS application developed with Swift-5.
-The aim is to show the user how to play in a simple way in iOS applications.
+iOS UIKit game where you play rock, paper, scissors against the computer in first-to-five matches.
 
-## Project Content ℹ️
-It is a project developed with Swift 5.5 You will learn the usage of components such as Button, Image, Label. <br>
+**About:** `iOS Rock Paper Scissors game in Swift and UIKit. First-to-five matches, win streaks, and a resettable scoreboard.`
 
-## How to Play the Game ⁉️
-There are 2 competitors in the game, a user and a computer. Our opponent is random according to our choice
-it waits for its result against us by offering a choice. If he uses a good employee from us, he gets 1 point. If we win
-our score increases by 1. If it is equal, the game continues without changing anything.
+## Topics
 
-The match is **first to 5 points**. After a match ends, tap **Maçı Sıfırla** to start a new one. Consecutive wins are tracked as a streak, along with your best streak.
+20 GitHub topics (same count as the current sidebar), mixing high-traffic tags with game-specific ones. Replaces typos such as `game-developement` and misleading tags such as `swift-game-engine`.
 
-The states of the structures relative to each other
-is as follows:
+<p align="center">
+  <a href="https://github.com/topics/ios"><img alt="ios" src="https://img.shields.io/badge/ios-111111?logo=apple&logoColor=white" /></a>
+  <a href="https://github.com/topics/swift"><img alt="swift" src="https://img.shields.io/badge/swift-F05138?logo=swift&logoColor=white" /></a>
+  <a href="https://github.com/topics/uikit"><img alt="uikit" src="https://img.shields.io/badge/uikit-2396F3" /></a>
+  <a href="https://github.com/topics/xcode"><img alt="xcode" src="https://img.shields.io/badge/xcode-147EFB?logo=xcode&logoColor=white" /></a>
+  <a href="https://github.com/topics/ios-app"><img alt="ios-app" src="https://img.shields.io/badge/ios--app-000000" /></a>
+  <a href="https://github.com/topics/ios-application"><img alt="ios-application" src="https://img.shields.io/badge/ios--application-333333" /></a>
+  <a href="https://github.com/topics/ios-game"><img alt="ios-game" src="https://img.shields.io/badge/ios--game-6E40C9" /></a>
+  <a href="https://github.com/topics/ios-swift"><img alt="ios-swift" src="https://img.shields.io/badge/ios--swift-F05138" /></a>
+  <a href="https://github.com/topics/ios-demo"><img alt="ios-demo" src="https://img.shields.io/badge/ios--demo-555555" /></a>
+  <a href="https://github.com/topics/swift5"><img alt="swift5" src="https://img.shields.io/badge/swift5-F05138" /></a>
+  <a href="https://github.com/topics/swift-language"><img alt="swift-language" src="https://img.shields.io/badge/swift--language-F05138" /></a>
+  <a href="https://github.com/topics/swift-game"><img alt="swift-game" src="https://img.shields.io/badge/swift--game-C9341C" /></a>
+  <a href="https://github.com/topics/game"><img alt="game" src="https://img.shields.io/badge/game-2EA44F" /></a>
+  <a href="https://github.com/topics/game-development"><img alt="game-development" src="https://img.shields.io/badge/game--development-2EA44F" /></a>
+  <a href="https://github.com/topics/mobile-app"><img alt="mobile-app" src="https://img.shields.io/badge/mobile--app-0A66C2" /></a>
+  <a href="https://github.com/topics/mobile-game"><img alt="mobile-game" src="https://img.shields.io/badge/mobile--game-0A66C2" /></a>
+  <a href="https://github.com/topics/beginner"><img alt="beginner" src="https://img.shields.io/badge/beginner-EAB308" /></a>
+  <a href="https://github.com/topics/storyboard"><img alt="storyboard" src="https://img.shields.io/badge/storyboard-8B5CF6" /></a>
+  <a href="https://github.com/topics/rock-paper-scissors"><img alt="rock-paper-scissors" src="https://img.shields.io/badge/rock--paper--scissors-16A34A" /></a>
+  <a href="https://github.com/topics/stone-paper-scissors"><img alt="stone-paper-scissors" src="https://img.shields.io/badge/stone--paper--scissors-15803D" /></a>
+</p>
 
-1. Rock - Paper: Paper
-2. Rock - Scissors: Stone
-3. Rock - Rock: Draw
-4. Paper - Paper: Draw
-5. Paper - Scissors: Scissors
-6. Paper - Rock: Paper
-7. Scissors - Paper: Scissors
-8. Scissors - Scissors: Draw
-9. Scissors - Rock: Stone
+`ios` · `swift` · `uikit` · `xcode` · `ios-app` · `ios-application` · `ios-game` · `ios-swift` · `ios-demo` · `swift5` · `swift-language` · `swift-game` · `game` · `game-development` · `mobile-app` · `mobile-game` · `beginner` · `storyboard` · `rock-paper-scissors` · `stone-paper-scissors`
 
- <br>
+## Highlights
 
-## Screen Design 📱
+- Player vs computer with random computer moves
+- Shared `GameRules` resolver instead of duplicated button logic
+- First player to 5 points wins the match
+- Current streak and best streak on the scoreboard
+- Match lock after a winner, plus **Maçı Sıfırla** to start again
+
+## How to play
+
+Pick **Taş**, **Kağıt**, or **Makas**. The computer picks at the same time.
+
+| You | Computer | Result |
+| --- | --- | --- |
+| Rock | Scissors | You win |
+| Paper | Rock | You win |
+| Scissors | Paper | You win |
+| Same move | Same move | Draw |
+| Anything else | Counter | Computer wins |
+
+A win adds 1 point and grows your streak. A loss resets the streak. Draws leave the score unchanged. The first side to 5 points takes the match.
+
+## Architecture
+
+```text
+ViewController  →  GameRules.playRound(player, computer)
+     UI                    Move / RoundOutcome
+```
+
+| File | Role |
+| --- | --- |
+| `ViewController.swift` | Buttons, scoreboard, match chrome, reset |
+| `GameRules.swift` | Moves, win conditions, first-to-five constant |
+
+Open `TasKagitMakas/TasKagitMakas.xcodeproj` in Xcode and run the **TasKagitMakas** scheme.
+
+## Screenshots
 
 <p>
-  <img src="pic1.png" width="300" >
+  <img src="pic1.png" width="220" alt="Main board with rock, paper, and scissors buttons" />
+  <img src="res1.png" width="220" alt="Player chooses rock" />
+  <img src="res2.png" width="220" alt="Round result and live scores" />
 </p>
 
-We used various structures in screen design. 3 buttons were used. Other remaining structures are label elements.
-It was designed with a label, with fields where values are updated in cases of gain or loss.
-You can find the pictures used in the background of the buttons in the following file:
-
-https://github.com/halilozel1903/StonePaperScissorsGame/tree/master/TasKagitMakas/TasKagitMakas/Assets.xcassets
-
-We are now linking the designed codes in the ```ViewController.swift``` file:
-
-```java 
-  // MARK: - Variables 
-  // MARK: - IBOutlets
-  // MARK: - IBActions
-```
- We are editing the codes we have written with a new usage style. Defined structures are variables, definitions
- and button operations. We will be able to navigate easily within the project as follows:
- 
- <p>
-  <img src="Screen%20Shot%202018-07-22%20at%2011.27.02%20PM.png" >
+<p>
+  <img src="res3.png" width="220" alt="Paper round against the computer" />
+  <img src="res4.png" width="220" alt="Scissors round against the computer" />
+  <img src="res5.png" width="220" alt="Updated player and computer points" />
 </p>
 
-<br>
+## License
 
-## Writing the Codes 💻
+MIT © Halil OZEL. See the license text below.
 
+<details>
+<summary>MIT License</summary>
 
-```swift 
-// MARK: - Variables
-    var myPoints = 0
-    var pcPoints = 0
-    let array = ["rock","paper","scissors"] // An array of string type was created.
-```
-Two variables were defined to keep the user's score and the computer's score. 0 is assigned to their initial value.
-An array of type string has been defined. The options used in the game have been added into the Array.
-
-<br>
-
-```swift 
- // MARK: - IBOutlets
-    @IBOutlet weak var myChoiseLabel: UILabel!
-    @IBOutlet weak var pcChoiseLabel: UILabel!
-    @IBOutlet weak var theEndLabel: UILabel!
-    @IBOutlet weak var myPointsLabel: UILabel!
-    @IBOutlet weak var pcPointsLabel: UILabel!
-```
-
-We defined the Labels in the design with code. Labels showing the points obtained by the user and the computer,
-a label indicating who is the winner and a label describing who won according to the total result.
-
-<br>
-
-Now we will write 3 methods to define the operations that will occur when the buttons are clicked. Their functions are similar.
-
-```swift 
-@IBAction func rockSelected(_ sender: Any) {
-        
-        let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // random element will be taken from the array.
-        
-        if pcSelected == "rock" {
-            myChoiseLabel.text = "Your Choice : Rock"
-            pcChoiseLabel.text = "Computer Choice : Rock"
-            theEndLabel.text = "Tie."
-            
-            
-        }else if pcSelected == "paper" {
-            myChoiseLabel.text = "Your Choice : Rock"
-            pcChoiseLabel.text = "Computer Choice : Paper"
-            theEndLabel.text = "Computer won."
-            
-            pcPoints += 1
-            
-            pcPointsLabel.text = String(pcPoints)
-            
-        }else if pcSelected == "scissors" {
-            myChoiseLabel.text = "Your Choice : Rock"
-            pcChoiseLabel.text = "Computer Choice : Scissors"
-            theEndLabel.text = "You won"
-            
-            myPoints += 1
-            
-            myPointsLabel.text = String(myPoints)
-            
-        }
-    }
-```
-
-We generate a random number between 0-2 using the random number generator function. This generated value is assigned to the value of array.
-Then the comparison is made. If the computer selects the "stone" option, a stone will be written on the selected part of the screen. As a result, because we chose stones, the result is a draw. If we choose stone and paper on the computer, the computer wins the game and gets 1 point. The message on the screen shows the computer won. If we are stone and computer scissors, we win and our score increases by 1 and the screen says you won.
-
- <br>
-
-```swift 
-
- // paper handling
-    @IBAction func paperSelected(_ sender: Any) {
-        
-        let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // random element will be taken from the array.
-        
-        if pcSelected == "rock" {
-            myChoiseLabel.text = "Your Choice : Paper"
-            pcChoiseLabel.text = "Computer Choice : Rock"
-            theEndLabel.text = "You won."
-            
-            myPoints += 1
-            
-            myPointsLabel.text = String(myPoints)
-            
-            
-        }else if pcSelected == "paper" {
-            myChoiseLabel.text = "Your Choice : Paper"
-            pcChoiseLabel.text = "Computer Choice : Paper"
-            theEndLabel.text = "Tie."
-            
-        
-            
-        }else if pcSelected == "scissors" {
-            myChoiseLabel.text = "Your Choice : Paper"
-            pcChoiseLabel.text = "Computer Choice : Scissors"
-            theEndLabel.text = "Computer won."
-            
-            pcPoints += 1
-            
-            pcPointsLabel.text = String(pcPoints)
-            
-        }
-        
-    }
-
-```
-
-This time, we become paper in our choices. The status of the paper compared to other components is checked. Much to the stone method
-This similar method performs the desired operations with only a slight change.
-
- <br>
-
-```swift 
-
-// scissors related operations
-    @IBAction func scissorSelected(_ sender: Any) {
-        
-        let randomSelected = Int(arc4random_uniform(3)) // 0,1,2
-        let pcSelected = array[randomSelected] // random element will be taken from the array.
-        
-        if pcSelected == "rock" {
-            myChoiseLabel.text = "Your Choice  : Rock"
-            pcChoiseLabel.text = "Bilgisayarın seçimi : Taş"
-            theEndLabel.text = "Computer won."
-            
-            pcPoints += 1
-            
-            pcPointsLabel.text = String(pcPoints)
-            
-            
-        }else if pcSelected == "paper" {
-            myChoiseLabel.text = "Your Choice  : scissors"
-            pcChoiseLabel.text = "Computer Choice : Paper"
-            theEndLabel.text = "You won."
-            
-            myPoints += 1
-            
-            myPointsLabel.text = String(myPoints)
-           
-            
-        }else if pcSelected == "scissors" {
-            myChoiseLabel.text = "Your Choice  : scissors"
-            pcChoiseLabel.text = "Computer Choice : scissors"
-            theEndLabel.text = "Tie"
-           
-            
-        }
-        
-    }
-
-```
-
-We have created a method to do the latest scissors related operations. If the scissors prevail, our score will increase by 1 if
-If the value of the computer wins, the value of the computer will increase by 1. The result will not change if we have equal options.
-
- <br>
-
-## Application Demo 📸
-
-
-<img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res1.png" width="200" />  <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res2.png" width="200" />  <img src="https://github.com/halilozel1903/StonePaperScissorsGame/blob/master/res3.png" width="200" />
-
-  <img src="res4.png" width="200" />  <img src="res5.png" width="200" /> <img src="res6.png" width="200" />
-
- <br>
- 
- ## Donation 💸
-
-If this project help 💁 you to develop, you can give me a cup of coffee. ☕
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/halilozel1903)
-
-## License 📚
 ```
 MIT License
 
@@ -258,3 +125,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+</details>
