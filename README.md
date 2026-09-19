@@ -12,19 +12,38 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue" />
 </p>
 
-<p align="center">
-  <img alt="ios" src="https://img.shields.io/badge/topic-ios-111111" />
-  <img alt="swift" src="https://img.shields.io/badge/topic-swift-F05138" />
-  <img alt="ios-game" src="https://img.shields.io/badge/topic-ios--game-6E40C9" />
-  <img alt="rock-paper-scissors" src="https://img.shields.io/badge/topic-rock--paper--scissors-2EA44F" />
-  <img alt="uikit" src="https://img.shields.io/badge/topic-uikit-2396F3" />
-</p>
-
 iOS UIKit game where you play rock, paper, scissors against the computer in first-to-five matches.
 
 **About:** `iOS Rock Paper Scissors game in Swift and UIKit. First-to-five matches, win streaks, and a resettable scoreboard.`
 
-Suggested GitHub topics: `ios`, `swift`, `uikit`, `ios-game`, `rock-paper-scissors`, `mobile-game`
+## Topics
+
+20 GitHub topics (same count as the current sidebar), mixing high-traffic tags with game-specific ones. Replaces typos such as `game-developement` and misleading tags such as `swift-game-engine`.
+
+<p align="center">
+  <a href="https://github.com/topics/ios"><img alt="ios" src="https://img.shields.io/badge/ios-111111?logo=apple&logoColor=white" /></a>
+  <a href="https://github.com/topics/swift"><img alt="swift" src="https://img.shields.io/badge/swift-F05138?logo=swift&logoColor=white" /></a>
+  <a href="https://github.com/topics/uikit"><img alt="uikit" src="https://img.shields.io/badge/uikit-2396F3" /></a>
+  <a href="https://github.com/topics/xcode"><img alt="xcode" src="https://img.shields.io/badge/xcode-147EFB?logo=xcode&logoColor=white" /></a>
+  <a href="https://github.com/topics/ios-app"><img alt="ios-app" src="https://img.shields.io/badge/ios--app-000000" /></a>
+  <a href="https://github.com/topics/ios-application"><img alt="ios-application" src="https://img.shields.io/badge/ios--application-333333" /></a>
+  <a href="https://github.com/topics/ios-game"><img alt="ios-game" src="https://img.shields.io/badge/ios--game-6E40C9" /></a>
+  <a href="https://github.com/topics/ios-swift"><img alt="ios-swift" src="https://img.shields.io/badge/ios--swift-F05138" /></a>
+  <a href="https://github.com/topics/ios-demo"><img alt="ios-demo" src="https://img.shields.io/badge/ios--demo-555555" /></a>
+  <a href="https://github.com/topics/swift5"><img alt="swift5" src="https://img.shields.io/badge/swift5-F05138" /></a>
+  <a href="https://github.com/topics/swift-language"><img alt="swift-language" src="https://img.shields.io/badge/swift--language-F05138" /></a>
+  <a href="https://github.com/topics/swift-game"><img alt="swift-game" src="https://img.shields.io/badge/swift--game-C9341C" /></a>
+  <a href="https://github.com/topics/game"><img alt="game" src="https://img.shields.io/badge/game-2EA44F" /></a>
+  <a href="https://github.com/topics/game-development"><img alt="game-development" src="https://img.shields.io/badge/game--development-2EA44F" /></a>
+  <a href="https://github.com/topics/mobile-app"><img alt="mobile-app" src="https://img.shields.io/badge/mobile--app-0A66C2" /></a>
+  <a href="https://github.com/topics/mobile-game"><img alt="mobile-game" src="https://img.shields.io/badge/mobile--game-0A66C2" /></a>
+  <a href="https://github.com/topics/beginner"><img alt="beginner" src="https://img.shields.io/badge/beginner-EAB308" /></a>
+  <a href="https://github.com/topics/storyboard"><img alt="storyboard" src="https://img.shields.io/badge/storyboard-8B5CF6" /></a>
+  <a href="https://github.com/topics/rock-paper-scissors"><img alt="rock-paper-scissors" src="https://img.shields.io/badge/rock--paper--scissors-16A34A" /></a>
+  <a href="https://github.com/topics/stone-paper-scissors"><img alt="stone-paper-scissors" src="https://img.shields.io/badge/stone--paper--scissors-15803D" /></a>
+</p>
+
+`ios` · `swift` · `uikit` · `xcode` · `ios-app` · `ios-application` · `ios-game` · `ios-swift` · `ios-demo` · `swift5` · `swift-language` · `swift-game` · `game` · `game-development` · `mobile-app` · `mobile-game` · `beginner` · `storyboard` · `rock-paper-scissors` · `stone-paper-scissors`
 
 ## Highlights
 
