@@ -49,7 +49,7 @@ class ViewController: UIViewController {
 
     private func play(_ playerMove: Move) {
         if matchOver {
-            theEndLabel.text = "Maç bitti. Yeni maç için sıfırla."
+            theEndLabel.text = "Match over. Reset to start a new one."
             return
         }
 
@@ -58,8 +58,8 @@ class ViewController: UIViewController {
             computerMove: Move.randomComputerMove()
         )
 
-        myChoiseLabel.text = "Sizin seçiminiz : \(result.playerMove.title)"
-        pcChoiseLabel.text = "Bilgisayarın seçimi : \(result.computerMove.title)"
+        myChoiseLabel.text = "Your choice: \(result.playerMove.title)"
+        pcChoiseLabel.text = "Computer's choice: \(result.computerMove.title)"
         theEndLabel.text = result.outcome.message
 
         switch result.outcome {
@@ -79,9 +79,9 @@ class ViewController: UIViewController {
         if myPoints >= GameRules.pointsToWinMatch || pcPoints >= GameRules.pointsToWinMatch {
             matchOver = true
             if myPoints > pcPoints {
-                theEndLabel.text = "Maçı siz kazandınız! \(myPoints)-\(pcPoints)"
+                theEndLabel.text = "You won the match! \(myPoints)-\(pcPoints)"
             } else {
-                theEndLabel.text = "Maçı bilgisayar kazandı. \(myPoints)-\(pcPoints)"
+                theEndLabel.text = "The computer won the match. \(myPoints)-\(pcPoints)"
             }
         }
 
@@ -93,17 +93,17 @@ class ViewController: UIViewController {
         pcPoints = 0
         winStreak = 0
         matchOver = false
-        myChoiseLabel.text = "Sizin seçiminiz :"
-        pcChoiseLabel.text = "Bilgisayarın seçimi :"
-        theEndLabel.text = "Yeni maç başladı. İlk \(GameRules.pointsToWinMatch) puanı alan kazanır."
+        myChoiseLabel.text = "Your choice:"
+        pcChoiseLabel.text = "Computer's choice:"
+        theEndLabel.text = "New match. First to \(GameRules.pointsToWinMatch) wins."
         refreshScoreboard()
     }
 
     private func refreshScoreboard() {
         myPointsLabel.text = String(myPoints)
         pcPointsLabel.text = String(pcPoints)
-        streakLabel.text = "Seri: \(winStreak)  •  En iyi: \(bestStreak)"
-        matchLabel.text = "İlk \(GameRules.pointsToWinMatch)'e \(myPoints)-\(pcPoints)"
+        streakLabel.text = "Streak: \(winStreak)  •  Best: \(bestStreak)"
+        matchLabel.text = "First to \(GameRules.pointsToWinMatch): \(myPoints)-\(pcPoints)"
     }
 
     private func setupMatchChrome() {
@@ -117,7 +117,7 @@ class ViewController: UIViewController {
         matchLabel.font = UIFont.boldSystemFont(ofSize: 16)
 
         resetButton.translatesAutoresizingMaskIntoConstraints = false
-        resetButton.setTitle("Maçı Sıfırla", for: .normal)
+        resetButton.setTitle("Reset Match", for: .normal)
         resetButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         resetButton.addTarget(self, action: #selector(resetMatch), for: .touchUpInside)
 
