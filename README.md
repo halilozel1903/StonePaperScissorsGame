@@ -51,11 +51,11 @@ iOS UIKit game where you play rock, paper, scissors against the computer in firs
 - Shared `GameRules` resolver instead of duplicated button logic
 - First player to 5 points wins the match
 - Current streak and best streak on the scoreboard
-- Match lock after a winner, plus **Maçı Sıfırla** to start again
+- Match lock after a winner, plus **Reset Match** to start again
 
 ## How to play
 
-Pick **Taş**, **Kağıt**, or **Makas**. The computer picks at the same time.
+Pick **Rock**, **Paper**, or **Scissors**. The computer picks at the same time.
 
 | You | Computer | Result |
 | --- | --- | --- |

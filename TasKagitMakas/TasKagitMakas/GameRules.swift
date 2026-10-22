@@ -16,11 +16,11 @@ enum Move: String {
     var title: String {
         switch self {
         case .rock:
-            return "Taş"
+            return "Rock"
         case .paper:
-            return "Kağıt"
+            return "Paper"
         case .scissors:
-            return "Makas"
+            return "Scissors"
         }
     }
 
@@ -49,11 +49,11 @@ enum RoundOutcome {
     var message: String {
         switch self {
         case .win:
-            return "Siz kazandınız."
+            return "You win."
         case .lose:
-            return "Bilgisayar kazandı."
+            return "The computer wins."
         case .draw:
-            return "Berabere kaldınız."
+            return "It's a draw."
         }
     }
 }
